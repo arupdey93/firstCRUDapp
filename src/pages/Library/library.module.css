@@ -1,0 +1,15 @@
+.container{
+  background-color: #1E1E24;
+  height: 100vh;
+}
+.box_image{
+  width:200px;
+}
+.display_box{
+  display:flex;
+  flex-wrap: wrap;
+  background-color: #1E1E24;
+}
+.display_item{
+  flex-basis: 200px;
+}

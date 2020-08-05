@@ -1,0 +1,118 @@
+/* NavBar */
+.nav_container{
+  height: 12vh;
+  background-color: #050505;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bar1,.bar2,.bar3{
+  width:35px;
+  height:5px;
+  background-color: #DBFCFF;
+  margin:6px 0;
+  transition:0.4s;
+  border-radius: 10px;
+}
+.bar3{
+  height: 4.9px;
+}
+.change_bar1{
+  width:35px;
+  height:5px;
+  background-color:#DBFCFF;
+  margin:6px 0;
+  transition:0.4s;
+  border-radius: 10px;
+  transform: rotate(-45deg) translate(-3px, 4px);  
+}
+.change .bar2{
+  opacity: 0;
+}
+.change_bar3{
+  width:35px;
+  height:5px;
+  background-color: #DBFCFF;
+  margin:6px 0;
+  transition:0.4s;
+  border-radius: 10px;
+  transform: rotate(45deg) translate(-3px,-5px);
+}
+.title{
+  width:70%;
+  text-align: center;
+  color: #DBFCFF;
+}
+.menu{
+  display: inline-block;
+  cursor: pointer;  
+}
+.x_list{
+  display: none;
+  color: #DBFCFF;
+}
+.linker, .linker:focus, .linker:hover, .linker:visited , .linker:link , .linker:active{
+  text-decoration: none;
+  color: #DBFCFF;
+}
+
+@media screen and (min-width:768px){
+  .nav_container{
+    height: 13vh;
+  }
+  .menu{
+    display: none;
+  }
+  .x_list{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+  }
+  title{
+    width: 20%;
+  }
+  .x_list > .linker > li, .x_list > li {
+    margin:0 10px;
+  }
+  .dropdown_content{
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown_settings{
+    display: none;
+    position: absolute;
+    left: -20px;
+    background-color: #312a31;
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown_settings > li, .dropdown_settings > .linker > li {
+    color: #DBFCFF;
+    padding:12px 16px;
+  }
+  .dropdown_content:hover .dropdown_settings{
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .nav_container{
+    height: 14vh;
+  }
+  .title > h2{
+    font-size: 40px;
+  }
+  .x_list{
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width:1440px){
+  .x_list{
+    font-size: 20px;
+  } 
+}

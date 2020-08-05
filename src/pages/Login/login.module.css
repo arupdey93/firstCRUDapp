@@ -1,0 +1,92 @@
+/* .log_container{
+  
+} */
+
+.title{
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #050505;
+}
+.title > h2{
+  color: #DBFCFF;
+}
+
+.log_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #1E1E24;
+  flex-direction: column;
+}
+.form_content_top{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column; 
+ height: 40vh;
+ width: 100%;
+}
+.form_input{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* margin-bottom */
+}
+.input1{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  justify-content: center;
+  align-items: flex-end;
+}
+.input1 > label {
+  color: #DBFCFF;
+}
+.input2{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+.input2 input[type="text"],.input2 input[type="email"],.input2 input[type="password"]{
+  border: none;
+}
+.input2 > input{
+  margin:2px 0;
+  border-radius: 5px;
+}
+.form_btn > button, .form_btn > .linker > button{
+  padding: 10px 15px;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  margin:0 4px;
+  box-shadow: 10px 10px 20px #050505;
+}
+.form_btn > button:hover,.form_btn > .linker > button:hover{
+  font-size: 16px;
+  background-color: #D2FDFF;
+}
+.linker, .linker:focus, .linker:hover, .linker:visited , .linker:link , .linker:active{
+  text-decoration: none;
+  color:black;
+}
+.form_content_bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  height: 40vh;
+  width: 100%;
+ }

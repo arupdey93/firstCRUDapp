@@ -1,0 +1,9 @@
+.container{
+  height: 100vh;
+  background-color: #1E1E24;
+}
+.display_box{
+  display:flex;
+  flex-wrap: wrap;
+  background-color: #1E1E24;
+}

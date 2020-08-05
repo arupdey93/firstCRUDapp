@@ -1,0 +1,102 @@
+.container{
+  background-color: #1E1E24;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #DBFCFF;
+  border-bottom:solid #7D1128 3px;
+  padding-top:15px;
+}
+.box_image{
+  width:300px;
+  height: 200px;
+}
+.add_box{
+  padding: 10px 0;
+}
+.add_btn{
+  display: inline-block;
+  padding: 1em;
+  border:none;
+  background-color: #000;
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s ease;
+  /* border-left: solid #59FFA0 10px; */
+  font-weight: 600;
+}
+.add_btn:hover {
+  color: #59FFA0;
+  cursor: pointer;
+}
+.selected_btn{
+  display: inline-block;
+  padding: 1em;
+  border:none;
+  background-color: #59FFA0;
+  text-decoration: none;
+  color: #545E75;
+  transition: color 0.5s ease;
+  /* border-left: solid #59FFA0 10px; */
+  font-weight: 600;
+}
+.remove_btn{
+  display: inline-block;
+  padding: 1em;
+  border:none;
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.5s ease;
+  /* border-left: solid #59FFA0 10px; */
+  font-weight: 600;
+}
+
+/* Sweep To Left */
+.sweep_right {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+.sweep_right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #59FFA0;
+  transform: scaleX(0);
+  transform-origin: 0%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.sweep_right:hover, .sweep_right:focus, .sweep_right:active {
+  color: #050505;
+}
+.sweep_right:hover:before, .sweep_right:focus:before, .sweep_right:active:before {
+  transform: scaleX(1);
+}
+
+@media screen and (min-width: 768px){
+  .container{
+    width: 50%;
+    flex-wrap: wrap;
+    border-bottom:none;
+  } 
+}
+
+@media screen and (min-width: 1024px){
+  .container{
+    width: 33%;
+  } 
+}
